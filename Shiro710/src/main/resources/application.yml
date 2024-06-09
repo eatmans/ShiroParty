@@ -1,0 +1,9 @@
+# 设置启动端口号
+server:
+  port: 8080
+
+spring:
+  thymeleaf:
+     cache: false
+  mvc:
+     static-path-pattern: /static/**

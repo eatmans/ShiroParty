@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/my-login.css">
+    <title>Shiro Party</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-style: oblique;
+        }
+
+        header {
+            background-color: #f9f9f9;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        ul {
+            float: right;
+            list-style-type: none;
+            margin: 15px;
+        }
+
+        ul li {
+            display: inline-block;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            transition: .6s ease;
+            border-radius: 20px;
+        }
+
+        ul li a:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        ul li.active a {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .logo {
+            width: 200px;
+        }
+
+        .title h1 {
+            color: #fff;
+            font-size: 70px;
+            font-family: Century Gothic;
+        }
+
+        .body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* 容器高度 */
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div>
+        <div>
+            <ul>
+                <li class="active"><a href="#">首页</a></li>
+                <li class="active"><a href="/tologin">登录</a></li>
+            </ul>
+        </div>
+        <div class="body">
+            <div class="brand">
+                <img src="/static/logo.png" alt="logo" class="logo">
+            </div>
+            <h1><span style="color: blueviolet;">Shiro Party</span></h1>
+        </div>
+    </div>
+</header>
+</body>
+</html>
